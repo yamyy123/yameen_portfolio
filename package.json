@@ -23,6 +23,7 @@
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
     "autoprefixer": "^10.4.14",
+    "emailjs-com": "^3.2.0",
     "ng-recaptcha": "^10.0.0",
     "postcss": "^8.4.24",
     "rxjs": "~7.5.0",

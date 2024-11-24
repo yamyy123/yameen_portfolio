@@ -12,6 +12,7 @@ import { DialogProgressComponent } from 'src/app/ui/common/progress/dialog-progr
 import { DialogModelProgress } from 'src/app/ui/common/progress/model';
 import { DialogSuccessComponent } from 'src/app/ui/common/success/dialog-success/dialog-success.component';
 import { UiUtilsView } from 'src/app/ui/utils/views.utils';
+import emailjs from 'emailjs-com';
 
 @Component({
   selector: 'app-home-contact',
@@ -93,6 +94,7 @@ export class HomeContactComponent implements OnInit {
    */
 
   _onSubmit(): void {
+    this.sendEmail();
     this._mInProgress = true;
  
     this.openProgress();
@@ -100,14 +102,14 @@ export class HomeContactComponent implements OnInit {
     // value.fromUrl = this.previousRoute;
     // value.source = "Thedroid";
     // console.log("onSubmit Contact: ", value);
-    setTimeout(() => {
-      // console.log("sd");
+    // setTimeout(() => {
+    //   // console.log("sd");
       
-      this.recaptchaV3Service.execute("importantAction").subscribe(token => {
-        this._resolvedCaptcha(token, value);
-        // this.addContact(value);
-      });
-    }, 100);
+    //   this.recaptchaV3Service.execute("importantAction").subscribe(token => {
+    //     this._resolvedCaptcha(token, value);
+    //     // this.addContact(value);
+    //   });
+    // }, 100);
   }
 
   _resolvedCaptcha(token: string, value: ParamPostContact) {
@@ -273,5 +275,35 @@ export class HomeContactComponent implements OnInit {
   closeSuccess() {
     if (this.mDialogSuccessRef) this.mDialogSuccessRef.close();
   }
+  name: string = '';
+  email: string = '';
+  message: string = '';
 
+  // Replace with your EmailJS credentials
+  serviceID = 'service_gctmu87'; // Your EmailJS service ID
+  templateID = 'template_tmzn0w4'; // Your EmailJS template ID
+  userID = 'rd00Zhi6himOYYfIp'; // Your EmailJS user ID
+
+  sendEmail() {
+    const templateParams = {
+      from_name: this.name,
+      from_email: this.email,
+      message: this.message
+    };
+console.log('iam reached')
+    emailjs.send(this.serviceID, this.templateID, templateParams, this.userID)
+      .then((response) => {
+        console.log('Email sent successfully!', response);
+        // alert('Your message has been sent!');
+        this.resetForm();
+          this.closeProgress();
+          this.openSuccess();
+      })
+      .catch((error) => {
+        console.error('Failed to send email:', error);
+        alert('There was an error sending your message. Please try again later.');
+        this.closeProgress();
+      });
+  }
+  
 }

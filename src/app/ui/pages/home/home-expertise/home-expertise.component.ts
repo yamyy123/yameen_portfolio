@@ -112,212 +112,209 @@ export class HomeExpertiseComponent implements OnInit {
     // design
     {
       "id": "5131",
-      "name": "Figma",
-      "logo": "assets/img/tools/figma.svg",
-      "link": "https://www.figma.com/",
+      "name": "Java",
+      "logo": "assets/img/tools/java-logo.png",
+      "link": "https://www.java.com/",
       "tab": "design"
     },
     {
       "id": "5131",
-      "name": "Adobe XD",
-      "logo": "assets/img/tools/xd.png",
-      "link": "https://www.adobe.com/products/xd.html",
+      "name": "TypeScript",
+      "logo": "assets/img/tools/typescript.png",
+      "link": "https://www.typescriptlang.org/",
       "tab": "design"
     },
 
     {
       "id": "5132",
-      "name": "Adobe Photoshop",
-      "logo": "assets/img/tools/ps.png",
-      "link": "https://www.adobe.com/products/photoshop.html",
+      "name": "Postman",
+      "logo": "assets/img/tools/postman.png",
+      "link": "https://www.postman.com/",
       "tab": "design"
     },
     {
       "id": "5133",
-      "name": "Adobe Illustrator",
-      "logo": "assets/img/tools/ai.svg",
-      "link": "https://www.adobe.com/products/illustrator.html",
+      "name": "Golang",
+      "logo": "assets/img/tools/golang.png",
+      "link": "https://go.dev/",
       "tab": "design"
     },
     {
       "id": "5134",
-      "name": "Ink Scape",
-      "logo": "assets/img/tools/inkscape-logo.svg",
-      "link": "https://inkscape.org/",
+      "name": "MongoDB",
+      "logo": "assets/img/tools/mongodb.png",
+      "link": "https://www.mongodb.com/",
       "tab": "design"
     },
 
 
 
-    // android
+//     // android
     {
       "id": "9110",
-      "name": "Android",
-      "logo": "assets/img/tools/android.svg",
-      "link": "https://developer.android.com/",
+      "name": "Jira",
+      "logo": "assets/img/tools/jira.png",
+      "link": "https://www.atlassian.com/",
       "tab": "android",
-      "color": "#3DDC84"
     },
     {
       "id": "9112",
-      "name": "Retrofit",
-      "logo": "assets/img/tools/square.png",
-      "link": "http://square.github.io/retrofit/",
+      "name": "Postgresql",
+      "logo": "assets/img/tools/postgresql.png",
+      "link": "https://www.postgresql.org/",
       "tab": "android"
     },
     {
       "id": "9113",
-      "name": "RxJava",
-      "logo": "assets/img/tools/RxJava-logo.png",
-      "link": "http://reactivex.io/",
+      "name": "Nats",
+      "logo": "assets/img/tools/nats.png",
+      "link": "https://nats.io/",
       "tab": "android"
     },
     {
       "id": "9114",
-      "name": "Jetpack Compose",
-      "logo": "assets/img/tools/pic_jetpack_compose.png",
-      "link": "https://developer.android.com/jetpack/compose",
+      "name": "Docker",
+      "logo": "assets/img/tools/docker.png",
+      "link": "https://www.docker.com/",
       "tab": "android"
     },
     {
       "id": "9115",
-      "name": "Architecture Components",
-      "logo": "assets/img/tools/pic_architecture_components.png",
-      "link": "https://developer.android.com/topic/architecture",
+      "name": "Git",
+      "logo": "assets/img/tools/git.png",
+      "link": "https://git-scm.com/",
       "tab": "android"
     },
     {
       "id": "9116",
-      "name": "Kotlin",
-      "logo": "assets/img/tools/kotlin-logo.png",
-      "link": "https://kotlinlang.org/",
+      "name": "Github",
+      "logo": "assets/img/tools/github.jpeg",
+      "link": "https://github.com/",
       "tab": "android"
     },
 
-    // cross
+//     // cross
 {
       "id": "4101",
-      "name": "Flutter",
-      "logo": "assets/img/tools/flutter_logo.svg",
-      "link": "https://flutter.dev/",
+      "name": "linux",
+      "logo": "assets/img/tools/linux.jpeg",
+      "link": "https://ubuntu.com/",
       "tab": "Cross",
-      "color": "#42A5F5"
     },
 
-    // web
+//     // web
 
     
 
     {
       "id": "8102",
-      "name": "Polymer",
-      "logo": "assets/img/tools/polymer.svg",
-      "link": "https://www.polymer-project.org/",
+      "name": "HTML",
+      "logo": "assets/img/tools/html.png",
+      "link": "https://html.com/",
       "tab": "web"
     },
 
     {
       "id": "8103",
-      "name": "WebComponents",
-      "logo": "assets/img/tools/web-component-logo.png",
-      "link": "https://www.webcomponents.org/",
+      "name": "CSS",
+      "logo": "assets/img/tools/css.png",
+      "link": "https://www.w3.org/Style/CSS/Overview.en.html",
       "tab": "web"
     },
     {
       "id": "8105",
-      "name": "HighCharts js",
-      "logo": "assets/img/tools/highchart-logo.png",
-      "link": "https://www.highcharts.com/",
+      "name": "K6",
+      "logo": "assets/img/tools/k6.png",
+      "link": "https://k6.io/",
       "tab": "web"
     },
     {
       "id": "8108",
-      "name": "Sass",
-      "logo": "assets/img/tools/sass-logo.svg",
-      "link": "https://sass-lang.com/",
+      "name": "C",
+      "logo": "assets/img/tools/c.png",
+      "link": "https://www.learn-c.org/",
       "tab": "web",
-      "color": "#CF649A"
     },
     {
       "id": "8106",
-      "name": "D3 js",
-      "logo": "assets/img/tools/d3.svg",
-      "link": "https://d3js.org/",
+      "name": "C++",
+      "logo": "assets/img/tools/c++.png",
+      "link": "https://isocpp.org/",
       "tab": "web"
     },
-    {
-      "id": "8104",
-      "name": "Ngrx",
-      "logo": "assets/img/tools/ngrx.svg",
-      "link": "https://ngrx.io/",
-      "tab": "web"
-    },
+//     {
+//       "id": "8104",
+//       "name": "Ngrx",
+//       "logo": "assets/img/tools/ngrx.svg",
+//       "link": "https://ngrx.io/",
+//       "tab": "web"
+//     },
     {
       "id": "8101",
       "name": "Angular",
       "logo": "assets/img/tools/angular.png",
-      "link": "https://angular.io/",
+      "link": "https://angular.dev/",
       "tab": "web",
       "color": "#FF4369"
     },
-    {
-      "id": "8109",
-      "name": "Scully",
-      "logo": "assets/img/tools/scully.svg",
-      "link": "https://https://scully.io/",
-      "tab": "web",
-    },
+    // {
+    //   "id": "8109",
+    //   "name": "Scully",
+    //   "logo": "assets/img/tools/scully.svg",
+    //   "link": "https://https://scully.io/",
+    //   "tab": "web",
+    // },
 
-    // backend
+    // // backend
 
-    {
-      "id": "7121",
-      "name": "Express",
-      "logo": "assets/img/tools/express.png",
-      "link": "https://expressjs.com/",
-      "tab": "back-end"
-    },
-    {
-      "id": "7122",
-      "name": "Sequelize",
-      "logo": "assets/img/tools/sequelize.png",
-      "link": "http://docs.sequelizejs.com/",
-      "tab": "back-end"
-    },
+    // {
+    //   "id": "7121",
+    //   "name": "Express",
+    //   "logo": "assets/img/tools/express.png",
+    //   "link": "https://expressjs.com/",
+    //   "tab": "back-end"
+    // },
+    // {
+    //   "id": "7122",
+    //   "name": "Sequelize",
+    //   "logo": "assets/img/tools/sequelize.png",
+    //   "link": "http://docs.sequelizejs.com/",
+    //   "tab": "back-end"
+    // },
 
-    {
-      "id": "7126",
-      "name": "NodeJs",
-      "logo": "assets/img/tools/nodejs.png",
-      "link": "https://nodejs.org/en/",
-      "tab": "back-end"
-    },
+    // {
+    //   "id": "7126",
+    //   "name": "NodeJs",
+    //   "logo": "assets/img/tools/nodejs.png",
+    //   "link": "https://nodejs.org/en/",
+    //   "tab": "back-end"
+    // },
 
-    // cloud
+    // // cloud
 
-    {
-      "id": "6121",
-      "name": "Firebase",
-      "logo": "assets/img/tools/firebase.svg",
-      "link": "https://firebase.google.com/",
-      "tab": "cloud"
-    },
+    // {
+    //   "id": "6121",
+    //   "name": "Firebase",
+    //   "logo": "assets/img/tools/firebase.svg",
+    //   "link": "https://firebase.google.com/",
+    //   "tab": "cloud"
+    // },
 
-    {
-      "id": "6123",
-      "name": "Azure",
-      "logo": "assets/img/tools/azure.png",
-      "link": "https://azure.microsoft.com",
-      "tab": "cloud"
-    },
+    // {
+    //   "id": "6123",
+    //   "name": "Azure",
+    //   "logo": "assets/img/tools/azure.png",
+    //   "link": "https://azure.microsoft.com",
+    //   "tab": "cloud"
+    // },
 
-    {
-      "id": "6124",
-      "name": "Google cloud",
-      "logo": "assets/img/tools/google-cloud.png",
-      "link": "https://cloud.google.com/",
-      "tab": "cloud"
-    },
+    // {
+    //   "id": "6124",
+    //   "name": "Google cloud",
+    //   "logo": "assets/img/tools/google-cloud.png",
+    //   "link": "https://cloud.google.com/",
+    //   "tab": "cloud"
+    // },
 
 
   ]

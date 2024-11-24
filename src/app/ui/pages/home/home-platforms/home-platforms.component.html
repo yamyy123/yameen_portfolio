@@ -1,139 +1,55 @@
 <div class="tb-position--relative main current" ngClass.xs="xs" ngClass.sm="sm" #animRefView>
-    <!-- <div class="tb-position--absolute tb-height--full"> -->
-    <!-- <div class="background-bar">
-
-        <div class="tb-container vertical-line-container" fxLayoutAlign="space-between stretch">
-            <div class="vertical-lines"></div>
-            <div class="vertical-lines"></div>
-            <div class="vertical-lines"></div>
-        </div>
-    </div> -->
     <div class="tb-container tb-position--relative container">
         <div fxLayout="column" fxLayoutAlign="start stretch">
             <div ngClass.gt-xs="tb-height--64" ngClass.xs="tb-height--20"></div>
 
+            <!-- Section Header -->
             <h2 [@transitionText]="{value:_mTriggerAnim, params:{animDelay:100}}" ngClass.gt-sm="current-typo--h3-light"
-                ngClass.sm="current-typo--h3-light" ngClass.xs="current-typo--h4">My Platforms.</h2>
+                ngClass.sm="current-typo--h3-light" ngClass.xs="current-typo--h4">My Experiences.</h2>
 
             <div ngClass.gt-xs="tb-height--56" ngClass.xs="tb-height--20"></div>
 
-
-            <!-- card junkielabs -->
-            <a [@transitionText]="{value:_mTriggerAnim, params:{animDelay:200}}"
-                class="junkie-section tb-position--relative card tb-color-bg--black-4 unlink"
-                href="https://junkielabs.in" target="_blank">
-
-
-                <div class="ribbon ribbon-top-right"><span class="current-typo--h5">Open Source</span></div>
-
-                <div class="card-content tb-position--relative" fxLayout="row" fxLayout.xs="column"
-                    fxLayoutAlign="start center">
-
-
-                    <div fxFlex="50" class="tb-position--relative" ngClass.gt-xs="tb-padding--right-16"
-                        ngClass.xs="tb-padding--bottom-24" fxLayout="column">
-                        <div class="tb-height--12"></div>
-                        <div class="tb-height--48">
-                            <img class="tb-image" src="assets/img/logos/junkielabs.png">
-                        </div>
-                        <div class="tb-height--12"></div>
-
-                        <h3 class="tb-font-weight--medium tb-color--black" ngClass.xs="current-typo--h2-medium"
-                            ngClass.sm="current-typo--h3-medium " ngClass.gt-sm="current-typo--h2-medium">JunkieLabs
-                        </h3>
-                        <div class="tb-height--12"></div>
-                        <p class="current-typo--body1 tb-color--black-75">An Open Source Initiative to help those who
-                            need a good and common pattern to make app from scratch</p>
-                        <div class="tb-height--20"></div>
-                        <a fxFlexAlign="start" class="btn-junkielab-area" href="https://junkielabs.in" target="_blank">
-                            <button mat-raised-button color="primary"><span class="current-typo--button-medium">Explore
-                                    Now.</span></button>
-
-                        </a>
-                        <div class="tb-height--12"></div>
-
-
+            <!-- Experience: Junior Software Engineer -->
+            <div class="experience-section tb-position--relative card tb-color-bg--black-4">
+                <div class="card-content tb-position--relative" fxLayout="row" fxLayoutAlign="start center">
+                    <div fxFlex="50" fxLayout="column" class="tb-padding--right-16">
+                        <h3 class="experience-title current-typo--h5">Junior Software Engineer</h3>
+                        <p class="experience-company tb-color--black-75">
+                            NetXD | May 2024 - Present | Chennai, India
+                        </p>
+                        <ul class="experience-details">
+                            <li>Worked on product development using a modern tech stack while following Agile methodologies.</li>
+                            <li>Improved system reliability by 20% through Go, MongoDB, and Java database interfacing, enhancing user experience by resolving 50 bugs.</li>
+                            <li>Reduced response time by 15% by implementing RPC to gRPC and designing a real-time data pipeline with NATS.</li>
+                            <li>Optimized JSON data processing with ClickHouse, reducing data retrieval time by 30%, and developed dynamic dashboards using Grafana, improving visualization efficiency by 40%.</li>
+                            <li>Managed and streamlined Metabase for data analytics, overseeing 50 ETL operations, improving reporting accuracy by 20%, and reducing query time by 15%.</li>
+                            <li>Reduced bank-FED testing time by 20% with a Golang simulation tool, ensuring protocol adherence (ISO 20022).</li>
+                            <li>Led backend development in a microservices architecture using Golang and Docker, enhancing scalability by 35% and reducing downtime by 25%.</li>
+                        </ul>
                     </div>
-
-                    <div class="card-image-area" fxFlex.xs="none" fxFlex fxLayoutAlign="start center" fxLayout="column">
-                        <app-junkielabs-illustration></app-junkielabs-illustration>
-
-                        <!-- <img class="image tb-position--relative" src="assets/img/illustrations/pic_junkielabs.png"> -->
-
-                    </div>
-
-                    <!-- <div fxFlex fxFlex.xs="none" class="card-empty-space tb-width--76">
-
-
-                    </div> -->
-
-
-
                 </div>
-
-            </a>
+            </div>
 
             <div ngClass.gt-xs="tb-height--32" ngClass.xs="tb-height--20"></div>
 
-            <!-- card thedroid -->
-            <a [@transitionText]="{value:_mTriggerAnim, params:{animDelay:300}}"
-                class="thedroid-section tb-position--relative card tb-color-bg--white unlink"
-                href="https://thedroid.io" target="_blank">
-                <div class="card-backgrond tb-position--absolute" fxLayout="row" fxLayout.xs="column">
-
-                    <img class="tb-image tb-position--relative" src="assets/svg/TheDroid.io.svg">
-
-
-                </div>
-
-
-                <!-- <div class="ribbon ribbon-top-right"><span class="current-typo--h5">Open Source</span></div> -->
-
-                <div class="card-content tb-position--relative" fxLayout="row" fxLayout.xs="column"  fxLayoutAlign="start center">
-
-
-                    <div fxFlex="50" class="tb-position--relative" ngClass.gt-xs="tb-padding--right-16"
-                        ngClass.xs="tb-padding--bottom-24" fxLayout="column">
-                        <div class="tb-height--12"></div>
-                        <div class="tb-height--64">
-                            <img class="tb-image" src="assets/svg/thedroid_logo.svg">
-                        </div>
-                        <div class="tb-height--12"></div>
-
-                        <h3 class="tb-font-weight--medium tb-color--black" ngClass.xs="current-typo--h2-medium"
-                            ngClass.sm="current-typo--h3-medium " ngClass.gt-sm="current-typo--h2-medium">Thedroid.io
-                        </h3>
-                        <div class="tb-height--12"></div>
-                        <p class="current-typo--body1 tb-color--black-75">Freelance platform for app designing and
-                            Development for my clients. </p>
-                        <div class="tb-height--32"></div>
-                        <a fxFlexAlign="start" class="btn-thedroid-area" href="https://thedroid.io" target="_blank">
-                            <button class="thedroid-button" mat-raised-button color="primary"><span class="current-typo--button-medium">Explore
-                                    Now.</span></button>
-
-                        </a>
+            <!-- Experience: Project Intern -->
+            <div class="experience-section tb-position--relative card tb-color-bg--white">
+                <div class="card-content tb-position--relative" fxLayout="row" fxLayoutAlign="start center">
+                    <div fxFlex="50" fxLayout="column" class="tb-padding--right-16">
+                        <h3 class="experience-title current-typo--h5">Project Intern</h3>
+                        <p class="experience-company tb-color--black-75">
+                            NetXD | Aug 2023 - Apr 2024 | Chennai, India
+                        </p>
+                        <ul class="experience-details">
+                            <li>Collaborated with the development team to deliver cutting-edge software solutions.</li>
+                            <li>Developed and maintained high-performance web applications using Golang and Angular, boosting user engagement by 50%.</li>
+                            <li>Designed and deployed RESTful APIs in Golang, facilitating a 30% increase in data communication efficiency.</li>
+                            <li>Improved MongoDB database performance by 20% through efficient schema design and query optimization.</li>
+                            <li>Streamlined version control with Git, improving team collaboration and reducing integration issues by 20%.</li>
+                        </ul>
                     </div>
-
-                    <div class="card-image-area" fxFlex.xs="none" fxFlex fxLayoutAlign="start center" fxLayout="column">
-                        <app-thedroid-illustration></app-thedroid-illustration>
-
-                        <!-- <img class="image tb-position--relative" src="assets/img/illustrations/pic_junkielabs.png"> -->
-
-                    </div>
-
-                    <!-- <div class="card-image-area" fxFlex.xs="none" fxFlex fxLayoutAlign="start center" fxLayout="column">
-
-                        <img class="image tb-position--relative" src="assets/img/illustrations/pic_junkielabs.png">
-
-                    </div> -->
-
-
-
-
                 </div>
-
-            </a>
-
+            </div>
         </div>
     </div>
 </div>

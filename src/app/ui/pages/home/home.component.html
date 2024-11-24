@@ -1,29 +1,44 @@
 <!-- <p >home works!</p> -->
-<div class="tb-height--56"></div>
-<div ngClass.gt-xs="tb-height--48" ngClass.xs="tb-height--12"></div>
-
+<!-- <div class="tb-height--56"></div>
+<div ngClass.gt-xs="tb-height--48" ngClass.xs="tb-height--12"></div> -->
+<div class="header-container" [ngClass]="{'scrolled': isScrolled}">
+    <nav class="header-navigation">
+        <ul class="header-links">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#showcases">Showcases</a></li>
+            <li><a href="#platforms">Experience</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</div>
 
 <!-- <app-home-platforms></app-home-platforms> -->
+<div id="top">
 <app-home-top></app-home-top>
-
+</div>
+<div id="about">
 <app-home-about></app-home-about>
+</div>
 
 <div ngClass.gt-xs="tb-height--48" ngClass.xs="tb-height--12"></div>
-
+<div id="showcases">
 <app-home-showcases></app-home-showcases>
+</div>
 
 <div ngClass.gt-xs="tb-height--48" ngClass.xs="tb-height--12"></div>
-
+<div id="platforms">
 <app-home-platforms></app-home-platforms>
-
+</div>
 <div ngClass.gt-xs="tb-height--48" ngClass.xs="tb-height--12"></div>
-
+<div id="expertise">
 <app-home-expertise></app-home-expertise>
-
+</div>
 <div ngClass.gt-xs="tb-height--48" ngClass.xs="tb-height--12"></div>
-
+<div id="contact">
 <app-home-contact></app-home-contact>
-
+</div>
 <div ngClass.gt-xs="tb-height--48" ngClass.xs="tb-height--12"></div>
 
 <app-footer></app-footer>

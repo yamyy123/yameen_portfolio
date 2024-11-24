@@ -108,4 +108,16 @@ export class HomeAboutComponent implements OnInit {
     )
   }
 
+
+  resumeUrl: string = '/assets/Mohammed_Yameen_SM_Resume.pdf'; 
+
+  downloadAndOpenResume(event: Event): void {
+    event.preventDefault(); 
+    window.open(this.resumeUrl, '_blank');
+    const anchor = document.createElement('a');
+    anchor.href = this.resumeUrl;
+    anchor.download = 'MohammedYameen_Resume.pdf'; 
+    anchor.click();
+  }
+
 }

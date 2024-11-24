@@ -1,34 +1,49 @@
 <div class="tb-position--relative main current" ngClass.xs="xs" ngClass.sm="sm" #animRefView>
     <div fxLayout="column" fxLayoutAlign="start stretch">
+        <!-- Section Header -->
         <div [@transitionText]="{value:_mTriggerAnim, params:{animDelay:100}}" fxLayout="row" fxLayoutAlign="start end">
-            <h4 class="section-title current-typo--h4 tb-flex--shrink-0">My Apps.</h4>
+            <h4 class="section-title current-typo--h4 tb-flex--shrink-0">My Education.</h4>
             <div class="tb-width--12"></div>
             <div fxFlex="60" class="line tb-color-bg--black"></div>
             <div fxFlex class=""></div>
         </div>
 
-
-
         <div ngClass.gt-xs="tb-height--36" ngClass.xs="tb-height--20"></div>
 
-        <!-- <p [@transitionText]="{value:_mTriggerAnim,  params: {animDelay: 500}}"
-            class="section-detail tb-color--black-54" ngClass.gt-sm="current-typo--body1"
-            ngClass.sm="current-typo--body1" ngClass.xs="current-typo--body1">
-            Some of the clients apps, which I have made recently in Android and Flutter. For more project please
-            visit
-            <a class="" href="https://www.thedroid.io" target="_blank" matTooltip="thedroid.io">
-                <span class="tb-color--black">thedroid.io</span>
-            </a>
-        </p> -->
+        <!-- Education Details -->
+        <div fxLayout="column" class="education-section">
+            <!-- College -->
+            <div class="education-item">
+                <h5 class="education-degree current-typo--h5">Bachelor of Engineeringin Electrical and Electronics Engineering</h5>
+                <p class="education-institution current-typo--body1 tb-color--black-54">Bannari Amman Institute of Technology, 2020 - 2024</p>
+                <p class="education-detail current-typo--body2 tb-color--black-54">
+                    Stream: Electrical and Electronics | CGPA: 8.69
+                </p>
+            </div>
+
+            <div ngClass.gt-xs="tb-height--20" ngClass.xs="tb-height--12"></div>
+
+            <!-- HSC -->
+            <div class="education-item">
+                <h5 class="education-degree current-typo--h5">Higher Secondary Education (HSC)</h5>
+                <p class="education-institution current-typo--body1 tb-color--black-54">Saru Matriculation Higher Secondary School, 2019 - 2020</p>
+                <p class="education-detail current-typo--body2 tb-color--black-54">
+                    Stream: Bio-Maths | Percentage: 67.7
+                </p>
+            </div>
+
+            <div ngClass.gt-xs="tb-height--20" ngClass.xs="tb-height--12"></div>
+
+            <!-- SSLC -->
+            <div class="education-item">
+                <h5 class="education-degree current-typo--h5">Secondary School Leaving Certificate (SSLC)</h5>
+                <p class="education-institution current-typo--body1 tb-color--black-54">Saru Matriculation Higher Secondary School, 2017 - 2018</p>
+                <p class="education-detail current-typo--body2 tb-color--black-54">
+                    Percentage: 82.4
+                </p>
+            </div>
+        </div>
 
         <div ngClass.gt-xs="tb-height--40" ngClass.xs="tb-height--20"></div>
-
-        <div fxLayout.gt-sm="row wrap" fxLayout.lt-md="column" fxLayoutAlign.gt-sm="space-between center"
-            fxLayoutAlign.lt-md="start stretch">
-            <ng-container *ngFor="let app of _mApps">
-                <app-myapp-item class="tw-mt-4 tw-mx-2"  [fxFlex.gt-sm]="app.isFull ? 'calc( 100% - 1rem )' : 'calc( 50% - 1rem )'" fxFlex.lt-md="none"  [data]="app">
-                </app-myapp-item>
-            </ng-container>
-        </div>
     </div>
 </div>

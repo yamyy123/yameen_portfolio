@@ -2,6 +2,7 @@ import { ScrollDispatcher, ViewportRuler } from '@angular/cdk/scrolling';
 import { ChangeDetectorRef, Component, ElementRef, NgZone, OnInit } from '@angular/core';
 import { MediaObserver } from '@angular/flex-layout';
 import { ENTER_SCALE, TRANSITION_TEXT, TRANSITION_TEXT_ENTER } from 'src/app/ui/animations/transitions/transitions.constants';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 
 @Component({
   selector: 'app-home-top',
@@ -12,7 +13,13 @@ import { ENTER_SCALE, TRANSITION_TEXT, TRANSITION_TEXT_ENTER } from 'src/app/ui/
     TRANSITION_TEXT_ENTER,
     // TRANSITION_AREA_SLIDE,
     // TRANSITION_IMAGE_SCALE,
-    ENTER_SCALE
+    ENTER_SCALE,
+    trigger('imageTransition', [
+      transition(':enter', [
+        style({ opacity: 0, transform: 'translateY(20px)' }), // Initial state
+        animate('1s ease-out', style({ opacity: 1, transform: 'translateY(0)' })) // Final state
+      ]),
+    ]),
   ]
 })
 export class HomeTopComponent implements OnInit {

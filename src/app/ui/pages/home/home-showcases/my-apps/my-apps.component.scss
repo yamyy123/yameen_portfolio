@@ -1,74 +1,75 @@
 .main {
-    // overflow-x: hidden;
-    .container {
-        box-sizing: border-box;
-        padding: 0px 20px;
+    .education-section {
+        margin-top: 20px;
+
+        .education-item {
+            margin-bottom: 24px;
+
+            display: flex;
+            flex-direction: column;
+
+            .education-degree {
+                font-weight: bold;
+                font-size: 1.5rem;
+                margin-bottom: 6px;
+                color: #000; // Black for emphasis
+            }
+
+            .education-institution {
+                font-size: 1rem;
+                color: #757575; // Grey for secondary text
+                margin-bottom: 4px;
+            }
+
+            .education-detail {
+                font-size: 0.9rem;
+                color: #616161; // Slightly darker grey for stream and CGPA
+            }
+        }
     }
 
+    // Line under "My Education"
     .line {
         height: 2px;
+        background-color: #000; // Black for line
     }
 
     .section-title {
-        line-height: 0.7;
+        line-height: 1.2;
+        font-size: 1.8rem;
     }
 
-    .section-detail{
-        width: 70%;
-    }
+    &.sm {
+        .education-section {
+            margin-top: 16px;
 
-   
-    .logos-area{
-        height: 500px;
+            .education-item {
+                .education-degree {
+                    font-size: 1.3rem;
+                }
 
-        .image{
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-
+                .education-institution,
+                .education-detail {
+                    font-size: 0.9rem;
+                }
+            }
         }
     }
 
-    .logo-area-row{
-        height: 60%;      
-    }
+    &.xs {
+        .education-section {
+            margin-top: 12px;
 
-    .logo-area-small{
-        height: 35%;
-    }
+            .education-item {
+                .education-degree {
+                    font-size: 1.1rem;
+                }
 
-    .logo-area-large{
-        height: 100%;
-    }
-
-    &.sm{
-       
-        .logos-area{
-            height: 340px;
+                .education-institution,
+                .education-detail {
+                    font-size: 0.8rem;
+                }
+            }
         }
-
-        .icon-area-full{
-            height: 264px;
-        }
-        // .logos-area{
-        //     height: 400px;
-        // }
-    
-        // .logo-area-row{
-        //     height: 264px;      
-        // }
-    
-        // .logo-area-small{
-        //     height: 100px;
-        // }
-    
-        // .logo-area-large{
-        //     height: 300px;
-        // }
     }
-
-    &.xs{
-    
-    }
-
 }

@@ -1,62 +1,60 @@
 .main {
-    // overflow-x: hidden;
+    // Parent container styles
+    padding-bottom: 70px; // Increased padding for more space below
+    background: transparent;
+  
     .container {
-        box-sizing: border-box;
-        padding: 0px 20px;
+      display: flex; // Flexbox ensures content is side by side
+      flex-wrap: nowrap; // Prevents wrapping on larger screens
+      align-items: center; // Ensures vertical alignment
+      justify-content: space-between; // Even spacing between elements
     }
-
-    .content {
-        padding-right: 20px;
-    }
-
+  
     .content-container {
-        height: calc(100vh - 72px) ;
-        max-height: 1080px;
+      flex: 1 1 60%; // Takes 60% of the width
+      padding-right: 20px;
+  
+      @media (max-width: 768px) {
+        // Adjust padding for smaller screens
+        padding-right: 0;
+      }
     }
-
-    .detail{
-        width: 70%;
+  
+    .image-container {
+      flex: 1 1 40%; // Takes 40% of the width
+      text-align: center;
+      margin-top: 0; // Default margin reset
+  
+      @media (max-width: 768px) {
+        // Add spacing for smaller screens
+        margin-top: 20px;
+      }
     }
-
+  
+    .developer-image {
+      max-width: 100%; // Ensures the image is responsive
+      height: auto;
+      border-radius: 8px; // Optional: for rounded edges
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); // Optional: for shadow effect
+    }
+  
+    // Responsive styles for extra small screens (e.g., mobile devices)
     &.xs {
-        height: unset;
-
-        // .container {
-        //     padding: 0px;
-        // }
-
-        .content-container {
-            height: unset;
-            max-height: unset;
-        }
-
-        .content {
-            // padding: 0px 20px;
-            // background-color: white;
-        }
-
-        .illustration-area {
-            // max-height: 200px;
-            height: 40vh;
-        }
-        .detail{
-            width: unset;
-        }
+      .container {
+        flex-direction: column; // Stacks content vertically on small screens
+        align-items: flex-start; // Align items to the start
+      }
+  
+      .content-container {
+        padding-right: 0; // Remove right padding for stacked content
+      }
+  
+      .image-container {
+        margin-top: 20px; // Add space between content and image
+      }
     }
-
-    &.sm {
-        .content-container {
-            height: unset;
-            max-height: unset;
-        }
-
-        .content {
-            // padding: 0px 20px;
-        }
-
-        .illustration-area {
-            height: 50vh;
-        }
-    }
-
-}
+  
+    // Add extra spacing below the main container
+    margin-bottom: 20px; // Additional margin at the bottom
+  }
+  

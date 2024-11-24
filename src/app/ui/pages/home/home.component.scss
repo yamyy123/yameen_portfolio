@@ -1,0 +1,101 @@
+// Global styles
+html {
+    scroll-behavior: smooth; // Enable smooth scrolling
+  }
+  
+  // Variables for colors
+  $primary-color: #282c34; // Default navbar background color
+  $highlight-color: #1f99d6; // Highlight color for links
+  $text-color: white; // Default text color
+  $header-scroll-bg: #ffffff; // Background color when scrolled
+  $navbar-scroll-color: #000000; // Navbar text color when scrolled
+  
+  // Mixins
+  @mixin smooth-transition($properties: all, $duration: 0.3s, $ease: ease) {
+    transition: $properties $duration $ease; // Simplifies adding transitions
+  }
+  
+  // Header styles
+  .header-container {
+    background-color: $primary-color; // Default background
+    color: $text-color; // Default text color
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; // Ensure it stays on top of other content
+    @include smooth-transition(background-color, 0.3s); // Smooth background transition
+  
+    &.scrolled {
+      background-color: $header-scroll-bg; // Background when scrolled
+      color: $navbar-scroll-color; // Text color when scrolled
+  
+      .header-navigation a {
+        color: $navbar-scroll-color; // Links change to navbar-scroll-color
+      }
+    }
+  
+    .header-navigation {
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+      }
+  
+      li {
+        margin: 0 15px;
+      }
+  
+      a {
+        color: $text-color; // Default link color
+        text-decoration: none;
+        font-size: 18px;
+        @include smooth-transition(color); // Smooth link color transition
+  
+        &:hover {
+          color: $highlight-color; // Highlight on hover
+        }
+      }
+    }
+  }
+  
+  // Section offset adjustment (to account for the sticky header)
+  [id] {
+    scroll-margin-top: 80px; // Adjust scroll position to account for header height
+  }
+  
+  // Optional: Adjust margins for extra spacing consistency
+  section {
+    padding: 40px 0;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  
+  // Active link styling (optional)
+  .active-link {
+    font-weight: bold;
+    color: $highlight-color;
+  }
+  
+  // Footer styles
+  .app-footer {
+    background-color: $primary-color;
+    padding: 20px;
+    color: $text-color;
+    text-align: center;
+  }
+  
+  // Responsive styles
+  @media (max-width: 768px) {
+    .header-navigation ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .header-navigation li {
+      margin: 10px 0;
+    }
+  }
+  

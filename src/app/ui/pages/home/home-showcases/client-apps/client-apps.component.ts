@@ -122,9 +122,9 @@ export class ClientAppsComponent implements OnInit {
 
     {
      "id": "5131",
-     "name": "PepPlus: For Academic Growth",
-     "image": "assets/img/clients/pepplus.png",
-     "link": "https://play.google.com/store/apps/details?id=com.pepstudy.pepplus",
+     "name": "Netxd Inc: RTP Connector",
+     "image": "assets/img/projects/RTP.png",
+     "link": "#RTP CONNECTOR",
      "tab": "Android",
      "color": "#FFFFFF"
    },
@@ -132,16 +132,16 @@ export class ClientAppsComponent implements OnInit {
 
    {
      "id": "5132",
-     "name": "WhichOne Shop: Amazon Flipkart",
-     "image": "assets/img/clients/whichone.png",
-     "link": "https://play.google.com/store/apps/details?id=com.whichone",
+     "name": "Freelance Project: Aviculture Oversight System",
+     "image": "assets/img/projects/Aviculture.png",
+     "link": "https://aviculture.up.railway.app/#/home-cus",
      "tab": "Flutter"
    },
    {
      "id": "5133",
-     "name": "Aabboo - Anonymous Chat Rooms",
-     "image": "assets/img/clients/aabboo.png",
-     "link": "https://play.google.com/store/apps/details?id=com.aabboo.social",
+     "name": "Freelance Project: Hospital Management System",
+     "image": "assets/img/projects/hospital.jpeg",
+     "link": "#hospital",
      "tab": "Android"
    }
   ];
